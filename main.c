@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <conio.h>
 
 int a[4][4]={0} ;
 
@@ -11,7 +12,7 @@ void pt(){
             printf("%7d" , a[i][j]);
         }
         puts("");
-        printf("\n");
+        puts("");
     }
 }
 
@@ -137,15 +138,22 @@ int main(){
         x = kong() ;
         if(x.n==0)break;
         r = rand()%x.n ;
+
         a[x.l[r]][x.r[r]] = b ;
+
         pt();
+
         do{
-            c = getchar();
+            c = _getch();
         }while(c!='w'&&c!='a'&&c!='s'&&c!='d');
         add( c ) ;
+
+        system("cls");
     }
+
     puts("");
     puts("game over !!!");
     printf("your score is %d" , sum() );
+
     return 0;
 }
