@@ -132,8 +132,9 @@ int main(){
     int b , r ;
     struct kon x={16} ;
     char c ;
-
+    printf("powered by Dr.Xiong\nplease use w a s d to move\n\n");
     while( x.n!=0 ){
+
         b = mi(rand()%2+1) ;
         x = kong() ;
         if(x.n==0)break;
@@ -154,6 +155,7 @@ int main(){
     puts("");
     puts("game over !!!");
     printf("your score is %d" , sum() );
+    system("pause");
 
     return 0;
 }

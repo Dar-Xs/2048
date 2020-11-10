@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1604893237 source:c:\users\darxs\documents\github\2048\main.c
+1604894521 source:c:\users\darxs\documents\github\2048\main.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
